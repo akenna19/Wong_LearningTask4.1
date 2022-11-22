@@ -27,16 +27,14 @@ public class MainActivity extends AppCompatActivity {
         num2 = findViewById(R.id.num2);
         num3 = findViewById(R.id.num3);
         Button add = findViewById(R.id.btnAdd);
-        result = findViewById(R.id.answer);
 
         add.setOnClickListener(view -> {
             int number1 = Integer.parseInt(num1.getText().toString());
             int number2 = Integer.parseInt(num2.getText().toString());
             int number3 = Integer.parseInt(num3.getText().toString());
             int sum = number1 + number2 + number3;
-            result.setText("Answer: " + sum);
 
-            resultMessage = result + " is " + number1 +" + " + number2 + " + "+number3;
+            resultMessage = sum + " is " + number1 +" + " + number2 + " + "+number3;
 
             // Create Bundle instance, this will allow transfer of data from Activity to DialogFragment
             Bundle args = new Bundle();
