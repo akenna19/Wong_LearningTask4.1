@@ -13,8 +13,8 @@ public class DialogFragmentCustom extends DialogFragment {
         String result = getArguments().getString("result");
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(this.getActivity());
-        builder.setTitle(result) .setMessage(result)
-                .setNegativeButton(result, new DialogInterface.OnClickListener() {
+        builder.setTitle("The total is") .setMessage(result)
+                .setNegativeButton("Close", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // User cancelled the dialog
                     }

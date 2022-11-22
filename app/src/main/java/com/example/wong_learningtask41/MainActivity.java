@@ -12,10 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    public EditText num1;
-    public EditText num2;
-    public EditText num3;
-    public TextView result;
+    private EditText num1;
+    private EditText num2;
+    private EditText num3;
+    private TextView result;
     String resultMessage;
     @Override
 
